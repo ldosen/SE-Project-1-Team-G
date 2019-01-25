@@ -1,5 +1,6 @@
 import re
 import argparse
+from urllib.parse import urlparse
 
 class messageParser(object):
 
@@ -29,6 +30,17 @@ class messageParser(object):
             else:
                 self.mentions[mention] += 1
 
+    def extract_urls(self):
+        url_re = re.compile('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', re.UNICODE)
+        extracted_urls = url_re.findall(self.message)
+        for i in extracted_urls:
+            url = i
+            if url not in self.links.keys():
+                self.links.setdefault(url, 1)
+            else:
+                self.links[url] += 1
+
+
     def is_mentioned(self, username):
         if username in self.mentions.keys():
             return True
@@ -51,8 +63,10 @@ class messageParser(object):
         return len(self.topics.keys())
 
     def is_referenced(self, url):
-        pass
+        if url in self.links.keys():
+            return True
+        else:
+            return False
 
     def totalURL(self):
-        pass
-
+        return len(self.links.keys())

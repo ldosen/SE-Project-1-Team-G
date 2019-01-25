@@ -7,6 +7,7 @@ class TestMessageParserFunctions(unittest.TestCase):
         self.parser = messageParser("@franky goes to #hollywood. See http://cnn.com")
         self.parser.extract_topics()
         self.parser.extract_mentions()
+        self.parser.extract_urls()
 
     def testMention(self):
         self.assertTrue(self.parser.is_mentioned("franky"))

@@ -1,4 +1,5 @@
 import re
+import argparse
 
 class messageParser(object):
 
@@ -18,14 +19,27 @@ class messageParser(object):
             else:
                 self.topics[topic] += 1
 
+    def extract_mentions(self):
+        mention_re = re.compile("(?:^|\s)[＠ @]{1}([^\s#<>[\]|{}]+)", re.UNICODE)
+        extracted_mentions = mention_re.findall(self.message)
+        for i in extracted_mentions:
+            mention = i
+            if mention not in self.mentions.keys():
+                self.mentions.setdefault(mention, 1)
+            else:
+                self.mentions[mention] += 1
+
     def is_mentioned(self, username):
-        pass
+        if username in self.mentions.keys():
+            return True
+        else:
+            return False
 
     def times_mentioned(self, mention):
-        pass
+        return self.mentions.get(mention)
 
     def total_mentions(self):
-        pass
+        return len(self.mentions.keys())
 
     def has_topic(self, topic):
         if topic in self.topics.keys():

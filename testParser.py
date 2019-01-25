@@ -6,12 +6,13 @@ class TestMessageParserFunctions(unittest.TestCase):
     def setUp(self):
         self.parser = messageParser("@franky goes to #hollywood. See http://cnn.com")
         self.parser.extract_topics()
+        self.parser.extract_mentions()
 
     def testMention(self):
         self.assertTrue(self.parser.is_mentioned("franky"))
         self.assertFalse(self.parser.is_mentioned("george"))
         self.assertEqual(self.parser.times_mentioned("franky"), 1)
-        self.assertEqual(self.parser.times_mentioned("george"), 0)
+        self.assertEqual(self.parser.times_mentioned("george"), None)
         self.assertEqual(self.parser.total_mentions(), 1)
 
     def testTopic(self):

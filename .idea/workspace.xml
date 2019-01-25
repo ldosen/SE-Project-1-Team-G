@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dc0d2d1-d708-4487-a52f-39a5a0cb1400" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/se.project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/se.project1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/messageParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/messageParser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/testParser.py" afterDir="false" />
@@ -52,12 +50,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1774" />
+          <entry key="py" value="2292" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1774" />
+          <entry key="Python" value="2292" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -89,13 +87,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/messageParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <marker date="1548455881784" expanded="true" signature="180:186" ph="..." />
-                <marker date="1548455881784" expanded="true" signature="590:609" ph="..." />
-                <marker date="1548455881784" expanded="true" signature="734:843" ph="..." />
-                <marker date="1548455881784" expanded="true" signature="866:911" ph="..." />
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1548458263271" expanded="true" signature="196:202" ph="..." />
+                <marker date="1548458263271" expanded="true" signature="600:977" ph="..." />
+                <marker date="1548458263271" expanded="true" signature="1010:1124" ph="..." />
+                <marker date="1548458263271" expanded="true" signature="1159:1207" ph="..." />
+                <marker date="1548458263271" expanded="true" signature="1232:1279" ph="..." />
+                <marker date="1548458263271" expanded="true" signature="1306:1415" ph="..." />
+                <marker date="1548458263271" expanded="true" signature="1438:1483" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="27" />
     <option name="y" value="-9" />
     <option name="width" value="1635" />
@@ -163,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for testParser.TestMessageParserFunctions.testTopic">
+  <component name="RunManager" selected="Python tests.Unittests for testParser.TestMessageParserFunctions.testMention">
     <configuration name="helpme" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="se.project1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,8 +244,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for testParser.TestMessageParserFunctions.testTopic" />
         <item itemvalue="Python tests.Unittests for testParser.TestMessageParserFunctions.testMention" />
+        <item itemvalue="Python tests.Unittests for testParser.TestMessageParserFunctions.testTopic" />
         <item itemvalue="Python.messageParser" />
         <item itemvalue="Python.helpme" />
       </list>
@@ -274,6 +276,18 @@
     </history-entry>
     <history-entry file="Unittests_for_testParser_TestMessageParserFunctions_testTopic - 2019.01.25 at 16h 38m 47s.xml">
       <configuration name="Unittests for testParser.TestMessageParserFunctions.testTopic" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testParser_TestMessageParserFunctions_testMention - 2019.01.25 at 17h 17m 43s.xml">
+      <configuration name="Unittests for testParser.TestMessageParserFunctions.testMention" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testParser_TestMessageParserFunctions_testMention - 2019.01.25 at 17h 20m 03s.xml">
+      <configuration name="Unittests for testParser.TestMessageParserFunctions.testMention" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testParser_TestMessageParserFunctions_testMention - 2019.01.25 at 17h 20m 36s.xml">
+      <configuration name="Unittests for testParser.TestMessageParserFunctions.testMention" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testParser_TestMessageParserFunctions_testMention - 2019.01.25 at 17h 21m 22s.xml">
+      <configuration name="Unittests for testParser.TestMessageParserFunctions.testMention" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -312,8 +326,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="323">
+          <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -322,13 +336,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/messageParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <marker date="1548455881784" expanded="true" signature="180:186" ph="..." />
-            <marker date="1548455881784" expanded="true" signature="590:609" ph="..." />
-            <marker date="1548455881784" expanded="true" signature="734:843" ph="..." />
-            <marker date="1548455881784" expanded="true" signature="866:911" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1548458263271" expanded="true" signature="196:202" ph="..." />
+            <marker date="1548458263271" expanded="true" signature="600:977" ph="..." />
+            <marker date="1548458263271" expanded="true" signature="1010:1124" ph="..." />
+            <marker date="1548458263271" expanded="true" signature="1159:1207" ph="..." />
+            <marker date="1548458263271" expanded="true" signature="1232:1279" ph="..." />
+            <marker date="1548458263271" expanded="true" signature="1306:1415" ph="..." />
+            <marker date="1548458263271" expanded="true" signature="1438:1483" ph="..." />
           </folding>
         </state>
       </provider>

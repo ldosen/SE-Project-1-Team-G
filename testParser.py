@@ -25,18 +25,14 @@ class TestMessageParserFunctions(unittest.TestCase):
         self.assertTrue(self.parser.is_referenced("http://cnn.com"))
 <<<<<<< HEAD
         self.assertFalse(self.parser.is_referenced("http://youtube.com"))
-        self.assertEquals(self.parser.totalURL(), 1)
+        self.assertEqual(self.parser.totalURL(), 1)
 
     def main():
         setup()
         testMention()
         testTopic()
         testURL()
+        
+        #if __name__ == "__main__":
+        #unittest.main()
     
-=======
-        self.assertEqual(self.parser.totalURL(), 1)
-
-
-if __name__ == "__main__":
-    unittest.main()
->>>>>>> b8404e739d3d947c52651f3b07647a1f787dc2f8

@@ -1,16 +1,16 @@
 import re
 import argparse
-from urllib.parse import urlparse
 
 class messageParser(object):
 
     def __init__(self, message):
         if len(message) > 280:
             raise ValueError("Tweet too long!")
-        self.message = message
-        self.topics = {}
-        self.mentions = {}
-        self.links = {}
+        else:
+            self.message = message
+            self.topics = {}
+            self.mentions = {}
+            self.links = {}
 
     def extract_topics(self):
         hashtag_re = re.compile("(?:^|\s)[＃#]{1}(\w+)", re.UNICODE)

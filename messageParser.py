@@ -72,3 +72,4 @@ class messageParser(object):
 
     def totalURL(self):
         return len(self.links.keys())
+

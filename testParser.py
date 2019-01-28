@@ -24,3 +24,7 @@ class TestMessageParserFunctions(unittest.TestCase):
     def testURL(self):
         self.assertTrue(self.parser.is_referenced("http://cnn.com"))
         self.assertEqual(self.parser.totalURL(), 1)
+
+
+if __name__ == "__main__":
+    unittest.main()

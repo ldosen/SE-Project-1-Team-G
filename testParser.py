@@ -1,6 +1,7 @@
 import unittest
 from messageParser import *
 
+
 class TestMessageParserFunctions(unittest.TestCase):
 
     def setUp(self):
@@ -23,16 +24,9 @@ class TestMessageParserFunctions(unittest.TestCase):
 
     def testURL(self):
         self.assertTrue(self.parser.is_referenced("http://cnn.com"))
-<<<<<<< HEAD
         self.assertFalse(self.parser.is_referenced("http://youtube.com"))
         self.assertEqual(self.parser.totalURL(), 1)
 
-    def main():
-        setup()
-        testMention()
-        testTopic()
-        testURL()
-        
-        #if __name__ == "__main__":
-        #unittest.main()
-    
+
+if __name__ == "__main__":
+    unittest.main()

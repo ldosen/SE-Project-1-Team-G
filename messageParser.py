@@ -1,6 +1,7 @@
 import re
 import argparse
 
+
 class messageParser(object):
 
     def __init__(self, message):
@@ -42,7 +43,6 @@ class messageParser(object):
             else:
                 self.links[url] += 1
 
-
     def is_mentioned(self, username):
         if username in self.mentions.keys():
             return True
@@ -73,3 +73,28 @@ class messageParser(object):
     def totalURL(self):
         return len(self.links.keys())
 
+    def processText(self):
+        self.extract_mentions()
+        self.extract_topics()
+        self.extract_urls()
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-m", "--message", help="the tweet to be parsed for mentions, topics, etc.")
+parser.add_argument("-n", "--mentions", help="prints the total mentions", action="store_true")
+parser.add_argument("-t", "--topics", help="prints the total topics", action="store_true")
+parser.add_argument("-l", "--links", help="prints the total number of valid links", action="store_true")
+args = parser.parse_args()
+
+if __name__ == '__main__':
+    tweetParse = messageParser(args.message)
+    tweetParse.processText()
+
+    if args.mentions:
+        print(tweetParse.total_mentions())
+
+    if args.topics:
+        print(tweetParse.total_topics())
+
+    if args.links:
+        print(tweetParse.totalURL())

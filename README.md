@@ -1,6 +1,7 @@
 ﻿# Simple Tweet Processing
 
- To run the test suite from the command line `python testParser.py`
+To run the test suite from the command line `python testParser.py`
+
 Alternatively, run the program from the command line `python messageParser.py`
 - Use the --help option at the prompt for input options.
 ---

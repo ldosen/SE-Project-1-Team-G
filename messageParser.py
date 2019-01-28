@@ -5,6 +5,8 @@ from urllib.parse import urlparse
 class messageParser(object):
 
     def __init__(self, message):
+        if len(message) > 280:
+            raise ValueError("Tweet too long!")
         self.message = message
         self.topics = {}
         self.mentions = {}

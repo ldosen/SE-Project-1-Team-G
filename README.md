@@ -36,5 +36,5 @@ https://gist.github.com/mahmoud/237eb20108b5805aed5f
 ---
 **What still needs doing**
 
--More unit tests! Specifically, write tests that use unicode @ and # to see if the regex is truly functioning properly.
--some kind of abstraction to remove the code repetition in the extract functions.
+- More unit tests! Specifically, write tests that use unicode @ and # to see if the regex is truly functioning properly.
+- some kind of abstraction to remove the code repetition in the extract functions.

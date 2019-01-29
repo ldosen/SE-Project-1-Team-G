@@ -26,7 +26,12 @@ Alternatively, run the program from the command line `python messageParser.py`
 `is_referenced(url)`: returns true if the given URL was mentioned in the processed tweet, false if it was not.
 
 `total_url`: returns the total number of valid links in the processed tweet as an integer.
+---
+**Citations**
+The idea and implementation for a regex that also checked for unicode characters as well as basic text comes from this Gist:
+https://gist.github.com/mahmoud/237eb20108b5805aed5f
 
-
-
-
+---
+**What still needs doing**
+-More unit tests! Specifically, write tests that use unicode @ and # to see if the regex is truly functioning properly.
+-some kind of abstraction to remove the code repetition in the extract functions.

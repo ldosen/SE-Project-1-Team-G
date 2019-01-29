@@ -1,6 +1,7 @@
 import unittest
 from messageParser import *
 
+
 class TestMessageParserFunctions(unittest.TestCase):
 
     def setUp(self):

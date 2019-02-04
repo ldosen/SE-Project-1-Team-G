@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
 import re
 import argparse
 
@@ -14,7 +17,7 @@ class messageParser(object):
             self.links = {}
 
     def extract_topics(self):
-        hashtag_re = re.compile("(?:^|\s)[＃#]{1}(\w+)", re.UNICODE)
+        hashtag_re = re.compile("(?:^|\s)[ï¼ƒ#]{1}(\w+)", re.UNICODE)
         extracted_topics = hashtag_re.findall(self.message)
         for i in extracted_topics:
             topic = i
@@ -24,7 +27,7 @@ class messageParser(object):
                 self.topics[topic] += 1
 
     def extract_mentions(self):
-        mention_re = re.compile("(?:^|\s)[＠ @]{1}([^\s#<>[\]|{}]+)", re.UNICODE)
+        mention_re = re.compile("(?:^|\s)[ï¼  @]{1}([^\s#<>[\]|{}]+)", re.UNICODE)
         extracted_mentions = mention_re.findall(self.message)
         for i in extracted_mentions:
             mention = i
